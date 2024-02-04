@@ -68,7 +68,9 @@ span{
     border-radius: 4px;
 }
 
-ul{
+/* dropdown */
+
+/* ul{
     list-style: none;
 }
 
@@ -92,7 +94,7 @@ ul li ul.dropdown li{
 
 ul li ul.dropdown{
     width: 100%;
-    /* background: var(--bg-color); */
+    background: var(--bg-color);
     position: absolute;
     z-index: 999;
     display: none;
@@ -122,7 +124,7 @@ header ul li ul li{
     position: relative;
     width: 100%;
     margin-bottom: 8px;
-}
+} */
 
 #menu-icon{
     color: var(--second-color);

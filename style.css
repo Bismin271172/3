@@ -68,6 +68,62 @@ span{
     border-radius: 4px;
 }
 
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: var(--second-color);
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    /* background: var(--bg-color); */
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 2px;
+}
+
+ul li a:hover{
+    background-color: var(--second-color);
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+header ul li ul{
+    position: absolute;
+    width: 200px;
+    background: fixed;
+    display: none;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
 #menu-icon{
     color: var(--second-color);
     font-size: 35px;
@@ -164,8 +220,8 @@ header.sticky{
 
 .row-items1{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(325px, auto));
+    grid-gap: 5rem;
     align-items: center;
     text-align: center;
     margin-top: 5rem;
@@ -188,8 +244,6 @@ header.sticky{
     border-radius: 4px;
     margin-bottom: 15px;
     cursor: pointer;
-    display: flex;
-    justify-content: flex-start
 }
 
 .container-box1 h4{
@@ -197,19 +251,33 @@ header.sticky{
     font-weight: 600;
     margin-bottom: 8px;
 }
+.explain h4{
+    font-size: var(--h2-font);
+    line-height: 1.1;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 38px;
+    margin-bottom: 25px;
+}
+
+.explain p{
+    font-size: 15px;
+    text-align: left;
+}
 
 .container-box1 p{
     font-size: 15px;
     color: var(--second-color);
 }
 
-.container-box:hover{
+.container-box1:hover{
     box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
     border: 1px solid transparent;
     transform: translateY(-3px);
 }
 
-.container-box{
+.container-box1{
     background: var(--bg-color);
     border: 1px solid #f0eded;
     padding: 50px 10px;
